@@ -38,13 +38,47 @@
       font-weight: bold;
       display: inline-block;
     }
-    .hero {
-      padding: 55px 20px;
-      text-align: center;
-      color: white;
-      background: linear-gradient(135deg, #17492d, #568b45);
-    }
-    .hero h2 { font-size: 32px; margin: 0 0 12px; }
+    
+.hero {
+  position: relative;
+  padding: 75px 20px;
+  text-align: left;
+  color: white;
+  background:
+    linear-gradient(90deg, #123d28 10%, #123d28dd 55%, #123d2840),
+    url("IMG_20261009_133310.jpg") center/cover no-repeat;
+  border-bottom: 5px solid #e5c65a;
+}
+
+.hero-content {
+  max-width: 720px;
+  margin: auto;
+}
+
+.hero-label {
+  color: #f5d779;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.hero h2 {
+  font-size: clamp(30px, 5vw, 48px);
+  line-height: 1.2;
+  margin: 15px 0;
+}
+
+.hero-content > p:not(.hero-label) {
+  font-size: 17px;
+  max-width: 560px;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 55px 18px;
+    background-position: center;
+  }
+}
+
     .hero p { max-width: 650px; margin: 0 auto 24px; }
     .btn {
       display: inline-block;
@@ -119,11 +153,27 @@
   <a href="#contact">අමතන්න</a>
 </nav>
 
+
 <div class="hero" id="home">
-  <h2>ගොවිතැනට නව ශක්තියක්!</h2>
-  <p>නවීන කෘෂිකාර්මික යන්ත්‍රෝපකරණ සහ තාක්ෂණික විසඳුම් එකම තැනකින් සොයාගන්න.</p>
-  <a class="btn" href="#products">අපගේ සේවාවන් බලන්න</a>
-  <a class="btn" href="https://wa.me/94774306473">WhatsApp මඟින් අමතන්න</a>
+  <div class="hero-content">
+    <p class="hero-label">🌱 නවීන කෘෂිකාර්මික තාක්ෂණය</p>
+
+    <h2>ගොවිතැනට නව ශක්තියක්!</h2>
+
+    <p>
+      SURAWEERA AGRO TECH සමඟ නවීන
+      කෘෂිකාර්මික යන්ත්‍රෝපකරණ සහ තාක්ෂණික
+      විසඳුම් හඳුනාගන්න.
+    </p>
+
+    <a class="btn" href="#products">
+      අපගේ යන්ත්‍ර බලන්න →
+    </a>
+
+    <a class="btn" href="https://wa.me/94774306473">
+      WhatsApp මඟින් අමතන්න
+    </a>
+  </div>
 </div>
 
 <section id="products">
