@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Suraveera Agro Tech | සුරවීර ඇග්‍රෝ ටෙක්</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f8f1;
+            color: #263326;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #124b2c;
+            color: white;
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 30px;
+            margin-bottom: 5px;
+        }
+
+        nav {
+            background: #0b3820;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #d9f2c4, #ffffff);
+            padding: 55px 20px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            color: #14532d;
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: 0 auto 20px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #198754;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 5px;
+            font-weight: bold;
+        }
+
+        .section {
+            padding: 40px 18px;
+            text-align: center;
+        }
+
+        .section h2 {
+            color: #14532d;
+            margin-bottom: 25px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+            max-width: 1050px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            padding: 25px 18px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px #00000012;
+        }
+
+        .icon {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            color: #176438;
+            margin-bottom: 10px;
+        }
+
+        .about {
+            background: #e4f1df;
+        }
+
+        .contact {
+            background: #14532d;
+            color: white;
+        }
+
+        .contact h2 {
+            color: white;
+        }
+
+        footer {
+            background: #0b3820;
+            color: white;
+            padding: 18px;
+            text-align: center;
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 24px;
+            }
+
+            .hero h2 {
+                font-size: 25px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌾 SURAVEERA AGRO TECH</h1>
+    <p>සුරවීර ඇග්‍රෝ ටෙක්</p>
+    <p>කෘෂිකර්මාන්තයට නව තාක්ෂණයක්</p>
+</header>
+
+<nav>
+    <a href="#home">මුල් පිටුව</a>
+    <a href="#products">අපගේ සේවා</a>
+    <a href="#about">අප ගැන</a>
+    <a href="#contact">අමතන්න</a>
+</nav>
+
+<section class="hero" id="home">
+    <h2>ගොවිතැනට නව ජවයක්! 🌱</h2>
+
+    <p>
+        නවීන කෘෂි යන්ත්‍රෝපකරණ සහ තාක්ෂණික සේවා
+        එකම තැනකින් සොයාගන්න.
+        ඔබේ කෘෂිකාර්මික කටයුතු පහසු කරගැනීමට
+        Suraveera Agro Tech සමඟ එක්වන්න.
+    </p>
+
+    <a class="button" href="#products">අපගේ සේවා බලන්න</a>
+    <a class="button" href="#contact">අප අමතන්න</a>
+</section>
+
+<section class="section" id="products">
+    <h2>🚜 අපගේ නිෂ්පාදන හා සේවා</h2>
+
+    <div class="products">
+
+        <div class="card">
+            <div class="icon">🚜</div>
+            <h3>ට්‍රැක්ටර්</h3>
+            <p>
+                ගොවිබිම් සකස් කිරීම සහ
+                කෘෂිකාර්මික කටයුතු සඳහා
+                ට්‍රැක්ටර් පිළිබඳ තොරතුරු ලබාගන්න.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🌾</div>
+            <h3>ගොයම් කපන යන්ත්‍ර</h3>
+            <p>
+                අස්වනු නෙළීම පහසු කරගැනීමට
+                නවීන ගොයම් කපන යන්ත්‍ර
+                පිළිබඳ විමසන්න.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">💧</div>
+            <h3>වතුර මෝටර් සහ පොම්ප</h3>
+            <p>
+                වගාබිම්වලට ජලය සැපයීම සඳහා
+                ජල පොම්ප සහ වතුර මෝටර්
+                පිළිබඳ තොරතුරු ලබාගන්න.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🚁</div>
+            <h3>කෘෂිකාර්මික ඩ්‍රෝන</h3>
+            <p>
+                ඩ්‍රෝන තාක්ෂණය, වගාබිම් සිතියම්කරණය
+                සහ කෘෂිකාර්මික ඩ්‍රෝන සේවා
+                පිළිබඳ විමසන්න.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🛠️</div>
+            <h3>කෘෂි උපකරණ</h3>
+            <p>
+                ගොවිතැන් කටයුතු පහසු කරන
+                විවිධ කෘෂි යන්ත්‍ර සහ උපකරණ
+                පිළිබඳ විස්තර ලබාගන්න.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🌱</div>
+            <h3>කෘෂිකාර්මික තාක්ෂණය</h3>
+            <p>
+                නවීන තාක්ෂණය භාවිතයෙන්
+                කෘෂිකාර්මික කටයුතු කාර්යක්ෂම
+                කරගැනීමට අවශ්‍ය තොරතුරු ලබාගන්න.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section about" id="about">
+    <h2>අප ගැන</h2>
+
+    <p>
+        Suraveera Agro Tech යනු කෘෂිකාර්මික යන්ත්‍රෝපකරණ,
+        කෘෂි උපකරණ සහ නවීන කෘෂිකාර්මික තාක්ෂණය
+        පිළිබඳ තොරතුරු ලබාදීම අරමුණු කරගත්
+        සේවා සන්නාමයකි.
+    </p>
+
+    <p>
+        ශ්‍රී ලංකාවේ ගොවි ජනතාවට නවීන තාක්ෂණය
+        සමීප කරවීම අපගේ අරමුණයි.
+    </p>
+</section>
+
+<section class="section contact" id="contact">
+    <h2>📞 අප හා සම්බන්ධ වන්න</h2>
+
+    <p>අපගේ නිෂ්පාදන සහ සේවා පිළිබඳ විමසීමට අදම අමතන්න.</p>
+
+    <p>දුරකථන අංකය: ඔබගේ දුරකථන අංකය මෙතැනට යොදන්න</p>
+
+    <p>Facebook: Suraveera Agro Tech</p>
+
+    <a class="button"
+       href="https://wa.me/94774306473">
+       WhatsApp මගින් විමසන්න
+    </a>
+</section>
+
+<footer>
+    <p>© 2026 Suraveera Agro Tech. සියලුම හිමිකම් ඇවිරිණි.</p>
+    <p>කෘෂිකර්මාන්තයට නව තාක්ෂණයක් 🌾</p>
+</footer>
+
+</body>
+</html>
