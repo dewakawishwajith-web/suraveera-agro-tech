@@ -1,329 +1,184 @@
+
 <!DOCTYPE html>
 <html lang="si">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Suraweera Agro Tech | සුරවීර ඇග්‍රෝ ටෙක්</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-<div style="text-align:center; padding:20px;">
-  <h2>අපගේ කෘෂිකාර්මික යන්ත්‍ර</h2>
-  <img src="IMG_20251010_182102.jpg"
-       alt="Suraweera Agro Tech"
-       style="width:100%; max-width:500px; height:auto; border-radius:12px;">
-</div>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f8f1;
-            color: #263326;
-            line-height: 1.7;
-        }
-
-        header {
-            background: #124b2c;
-            color: white;
-            padding: 25px 15px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 30px;
-            margin-bottom: 5px;
-        }
-
-        nav {
-            background: #0b3820;
-            padding: 12px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-            font-weight: bold;
-        }
-
-        .hero {
-            background: linear-gradient(135deg, #d9f2c4, #ffffff);
-            padding: 55px 20px;
-            text-align: center;
-        }
-
-        .hero h2 {
-            color: #14532d;
-            font-size: 30px;
-            margin-bottom: 15px;
-        }
-
-        .hero p {
-            max-width: 650px;
-            margin: 0 auto 20px;
-        }
-
-        .button {
-            display: inline-block;
-            background: #198754;
-            color: white;
-            padding: 12px 24px;
-            text-decoration: none;
-            border-radius: 8px;
-            margin: 5px;
-            font-weight: bold;
-        }
-
-        .section {
-            padding: 40px 18px;
-            text-align: center;
-        }
-
-        .section h2 {
-            color: #14532d;
-            margin-bottom: 25px;
-        }
-
-        .products {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 18px;
-            max-width: 1050px;
-            margin: auto;
-        }
-
-        .card {
-            background: white;
-            padding: 25px 18px;
-            border-radius: 12px;
-            box-shadow: 0 3px 12px #00000012;
-        }
-
-        .icon {
-            font-size: 48px;
-            margin-bottom: 10px;
-        }
-
-        .card h3 {
-            color: #176438;
-            margin-bottom: 10px;
-        }
-
-        .about {
-            background: #e4f1df;
-        }
-
-        .contact {
-            background: #14532d;
-            color: white;
-        }
-
-        .contact h2 {
-            color: white;
-        }
-
-        footer {
-            background: #0b3820;
-            color: white;
-            padding: 18px;
-            text-align: center;
-        }
-
-        @media (max-width: 480px) {
-            header h1 {
-                font-size: 24px;
-            }
-
-            .hero h2 {
-                font-size: 25px;
-            }
-
-            nav a {
-                display: inline-block;
-                margin: 5px;
-                font-size: 14px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SURAWEERA AGRO TECH</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f8f2;
+      color: #203326;
+      line-height: 1.6;
+    }
+    header {
+      background: #123d28;
+      color: white;
+      padding: 22px 16px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      color: #f5d779;
+      font-size: 27px;
+    }
+    header p { margin-bottom: 0; }
+    nav {
+      background: #205c38;
+      padding: 12px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 9px;
+      font-weight: bold;
+      display: inline-block;
+    }
+    .hero {
+      padding: 55px 20px;
+      text-align: center;
+      color: white;
+      background: linear-gradient(135deg, #17492d, #568b45);
+    }
+    .hero h2 { font-size: 32px; margin: 0 0 12px; }
+    .hero p { max-width: 650px; margin: 0 auto 24px; }
+    .btn {
+      display: inline-block;
+      background: #f4d36f;
+      color: #183a26;
+      padding: 12px 22px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px;
+    }
+    section { padding: 35px 16px; }
+    .section-title {
+      text-align: center;
+      color: #205c38;
+      font-size: 26px;
+      margin-top: 0;
+    }
+    .products {
+      max-width: 1050px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px #173d2915;
+      padding-bottom: 18px;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+      background: #e4eadf;
+    }
+    .card h3 { color: #205c38; margin: 15px 8px 5px; }
+    .card p { padding: 0 12px; }
+    .about {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+    .contact {
+      background: #e5efdf;
+      text-align: center;
+    }
+    footer {
+      background: #123d28;
+      color: white;
+      text-align: center;
+      padding: 20px 12px;
+    }
+    footer p { margin: 5px; }
+  </style>
 </head>
-
 <body>
 
 <header>
-    <h1>🌾 SURAWEERA AGRO TECH</h1>
-    <p>සුරවීර ඇග්‍රෝ ටෙක්</p>
-    <p>කෘෂිකර්මාන්තයට නව තාක්ෂණයක්</p>
+  <h1>SURAWEERA AGRO TECH</h1>
+  <p>කෘෂිකර්මාන්තයට නවීන තාක්ෂණය</p>
 </header>
 
 <nav>
-    <a href="#home">මුල් පිටුව</a>
-    <a href="#products">අපගේ සේවා</a>
-    <a href="#about">අප ගැන</a>
-    <a href="#contact">අමතන්න</a>
+  <a href="#home">මුල් පිටුව</a>
+  <a href="#products">යන්ත්‍රෝපකරණ</a>
+  <a href="#about">අප ගැන</a>
+  <a href="#contact">අමතන්න</a>
 </nav>
 
-<section class="hero" id="home">
-    <h2>ගොවිතැනට නව ජවයක්! 🌱</h2>
+<div class="hero" id="home">
+  <h2>ගොවිතැනට නව ශක්තියක්!</h2>
+  <p>නවීන කෘෂිකාර්මික යන්ත්‍රෝපකරණ සහ තාක්ෂණික විසඳුම් එකම තැනකින් සොයාගන්න.</p>
+  <a class="btn" href="#products">අපගේ සේවාවන් බලන්න</a>
+  <a class="btn" href="https://wa.me/94774306473">WhatsApp මඟින් අමතන්න</a>
+</div>
 
-    <p>
-        නවීන කෘෂි යන්ත්‍රෝපකරණ සහ තාක්ෂණික සේවා
-        එකම තැනකින් සොයාගන්න.
-        ඔබේ කෘෂිකාර්මික කටයුතු පහසු කරගැනීමට
-        Suraweera Agro Tech සමඟ එක්වන්න.
-    </p>
+<section id="products">
+  <h2 class="section-title">අපගේ යන්ත්‍රෝපකරණ</h2>
+  <div class="products">
 
-    <a class="button" href="#products">අපගේ සේවා බලන්න</a>
-    <a class="button" href="#contact">අප අමතන්න</a>
-</section>
-
-<section class="section" id="products">
-    <h2>🚜 අපගේ නිෂ්පාදන හා සේවා</h2>
-
-    <div class="products">
-
-        <div class="card">
-            <div class="icon">🚜</div>
-            <h3>ට්‍රැක්ටර්</h3>
-            <p>
-                ගොවිබිම් සකස් කිරීම සහ
-                කෘෂිකාර්මික කටයුතු සඳහා
-                ට්‍රැක්ටර් පිළිබඳ තොරතුරු ලබාගන්න.
-
-                
-<img
-  src="IMG_20261009_133310.jpg"
-  alt="Suraweera Agro Tech Tractor"
-  style="width:100%; max-width:400px; height:auto; border-radius:12px;"
->
-                
-            </p>
-        </div>
-
-        <div class="card">
-            <div class="icon">🌾</div>
-            <h3>ගොයම් කපන යන්ත්‍ර</h3>
-            <p>
-                අස්වනු නෙළීම පහසු කරගැනීමට
-                නවීන ගොයම් කපන යන්ත්‍ර
-                පිළිබඳ විමසන්න.
-
-
-<img
-  src="IMG_20261009_133249.jpg"
-  alt="Suraweera Agro Tech Combine Harvester"
-  style="width:100%; max-width:400px; height:auto; border-radius:12px;"
->
-                
-            </p>
-        </div>
-
-        <div class="card">
-            <div class="icon">💧</div>
-            <h3>වතුර මෝටර් සහ පොම්ප</h3>
-            <p>
-                වගාබිම්වලට ජලය සැපයීම සඳහා
-                ජල පොම්ප සහ වතුර මෝටර්
-                පිළිබඳ තොරතුරු ලබාගන්න.
-<img
-  src="IMG_20261009_133229.jpg"
-  alt="Suraweera Agro Tech Water Motor"
-  style="width:100%; max-width:400px; height:auto; border-radius:12px;"
->
-
-                
-            </p>
-        </div>
-
-        <div class="card">
-            <div class="icon">🚁</div>
-            <h3>කෘෂිකාර්මික ඩ්‍රෝන</h3>
-            <p>
-                ඩ්‍රෝන තාක්ෂණය, වගාබිම් සිතියම්කරණය
-                සහ කෘෂිකාර්මික ඩ්‍රෝන සේවා
-                පිළිබඳ විමසන්න.
-
-<img
-  src="IMG_20261009_133207.jpg"
-  alt="Suraweera Agro Tech Agricultural Drone"
-  style="width:100%; max-width:400px; height:auto; border-radius:12px;"
->
-
-                
-            </p>
-        </div>
-
-        <div class="card">
-            <div class="icon">🛠️</div>
-            <h3>කෘෂි උපකරණ</h3>
-            <p>
-                ගොවිතැන් කටයුතු පහසු කරන
-                විවිධ කෘෂි යන්ත්‍ර සහ උපකරණ
-                පිළිබඳ විස්තර ලබාගන්න.
-            </p>
-        </div>
-
-        <div class="card">
-            <div class="icon">🌱</div>
-            <h3>කෘෂිකාර්මික තාක්ෂණය</h3>
-            <p>
-                නවීන තාක්ෂණය භාවිතයෙන්
-                කෘෂිකාර්මික කටයුතු කාර්යක්ෂම
-                කරගැනීමට අවශ්‍ය තොරතුරු ලබාගන්න.
-            </p>
-        </div>
-
+    <div class="card">
+      <img src="IMG_20261009_133310.jpg" alt="ට්‍රැක්ටර්">
+      <h3>🚜 ට්‍රැක්ටර්</h3>
+      <p>කෘෂිකාර්මික කටයුතු සඳහා ට්‍රැක්ටර්.</p>
+      <a class="btn" href="https://wa.me/94774306473">විමසන්න</a>
     </div>
+
+    <div class="card">
+      <img src="IMG_20261009_133249.jpg" alt="ගොයම් කපන යන්ත්‍රය">
+      <h3>🌾 ගොයම් කපන යන්ත්‍ර</h3>
+      <p>වී අස්වනු නෙළීම සඳහා යන්ත්‍රෝපකරණ.</p>
+      <a class="btn" href="https://wa.me/94774306473">විමසන්න</a>
+    </div>
+
+    <div class="card">
+      <img src="IMG_20261009_133229.jpg" alt="වතුර මෝටරය">
+      <h3>💧 වතුර මෝටර්</h3>
+      <p>කෘෂිකාර්මික ජල සැපයුම් අවශ්‍යතා සඳහා.</p>
+      <a class="btn" href="https://wa.me/94774306473">විමසන්න</a>
+    </div>
+
+    <div class="card">
+      <img src="IMG_20261009_133207.jpg" alt="කෘෂිකාර්මික ඩ්‍රෝනය">
+      <h3>🚁 කෘෂිකාර්මික ඩ්‍රෝන</h3>
+      <p>නවීන ඩ්‍රෝන තාක්ෂණය සහ සේවා.</p>
+      <a class="btn" href="https://wa.me/94774306473">විමසන්න</a>
+    </div>
+
+  </div>
 </section>
 
-<section class="section about" id="about">
-    <h2>අප ගැන</h2>
-
-    <p>
-        Suraweera Agro Tech යනු කෘෂිකාර්මික යන්ත්‍රෝපකරණ,
-        කෘෂි උපකරණ සහ නවීන කෘෂිකාර්මික තාක්ෂණය
-        පිළිබඳ තොරතුරු ලබාදීම අරමුණු කරගත්
-        සේවා සන්නාමයකි.
-    </p>
-
-    <p>
-        ශ්‍රී ලංකාවේ ගොවි ජනතාවට නවීන තාක්ෂණය
-        සමීප කරවීම අපගේ අරමුණයි.
-    </p>
+<section id="about">
+  <div class="about">
+    <h2 class="section-title">අප ගැන</h2>
+    <p><strong>SURAWEERA AGRO TECH</strong> — ගොවීන්ගේ කෘෂිකාර්මික අවශ්‍යතා සඳහා නවීන යන්ත්‍රෝපකරණ සහ තාක්ෂණික විසඳුම් හඳුන්වා දීමට කැපවූ නාමයකි.</p>
+  </div>
 </section>
 
-<section class="section contact" id="contact">
-    <h2>📞 අප හා සම්බන්ධ වන්න</h2>
-
-    <p>අපගේ නිෂ්පාදන සහ සේවා පිළිබඳ විමසීමට අදම අමතන්න.</p>
-
-    <p>දුරකථන අංකය: ඔබගේ දුරකථන අංකය මෙතැනට යොදන්න</p>
-
-    <p>Facebook: Suraweera Agro Tech</p>
-
-    <a class="button"
-       href="https://wa.me/94774306473">
-       WhatsApp මගින් විමසන්න
-    </a>
+<section id="contact" class="contact">
+  <h2 class="section-title">අප හා සම්බන්ධ වන්න</h2>
+  <p>යන්ත්‍රෝපකරණ සහ සේවා පිළිබඳ වැඩි විස්තර සඳහා අප අමතන්න.</p>
+  <a class="btn" href="https://wa.me/94774306473">📱 WhatsApp මඟින් අමතන්න</a>
 </section>
 
 <footer>
-    <p>© 2026 Suraweera Agro Tech. සියලුම හිමිකම් ඇවිරිණි.</p>
-    <p>කෘෂිකර්මාන්තයට නව තාක්ෂණයක් 🌾</p>
+  <p><strong>SURAWEERA AGRO TECH</strong></p>
+  <p>නවීන තාක්ෂණයෙන් සරුසාර ගොවිතැනකට!</p>
+  <p>© 2026 SURAWEERA AGRO TECH</p>
 </footer>
 
-<img
-  src="https://dewakawishwajith-web.github.io/suraveera-agro-tech/IMG_20251010_182102.jpg"
-  alt="Suraveera Agro Tech කෘෂිකාර්මික යන්ත්‍ර"
-  style="display:block; width:100%; max-width:500px; height:auto; margin:20px auto; border-radius:12px;"
->
-
-</body>
-</html>
-
-    
 </body>
 </html>
