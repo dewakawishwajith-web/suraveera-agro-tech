@@ -372,5 +372,35 @@
   <p>© 2026 SURAWEERA AGRO TECH</p>
 </footer>
 
+  
+<script>
+document.querySelectorAll('.whatsapp-btn').forEach(function(button) {
+  button.addEventListener('click', function(event) {
+    var productCard = button.closest('.product-card');
+    if (!productCard) return;
+
+    var heading = productCard.querySelector('h3');
+    var productName = heading
+      ? heading.textContent.trim()
+      : 'කෘෂි යන්ත්‍රයක්';
+
+    var message = 'ආයුබෝවන්! SURAWEERA AGRO TECH වෙතින් '
+      + productName
+      + ' පිළිබඳ මිල සහ වැඩි විස්තර ලබාගැනීමට කැමතියි.';
+
+    var link = button.getAttribute('href');
+    if (!link || !link.includes('wa.me/')) return;
+
+    event.preventDefault();
+
+    var separator = link.includes('?') ? '&' : '?';
+    var newLink = link + separator
+      + 'text=' + encodeURIComponent(message);
+
+    window.open(newLink, '_blank');
+  });
+});
+</script>
+
 </body>
 </html>
