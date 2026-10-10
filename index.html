@@ -279,6 +279,155 @@
   margin-top: 12px;
 }
 
+/* SURAWEERA AGRO TECH - Product Cards */
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 20px 0;
+}
+
+.product-card {
+  background: #ffffff;
+  border: 1px solid #dce9dd;
+  border-radius: 16px;
+  padding: 16px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 14px rgba(31, 92, 48, 0.09);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(31, 92, 48, 0.15);
+}
+
+.product-card img {
+  display: block;
+  width: 100%;
+  height: 190px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #f5f9f4;
+}
+
+.product-card h3 {
+  color: #205b32;
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 14px 0 8px;
+}
+
+.product-card p {
+  color: #526052;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 8px 0;
+}
+
+.product-card .whatsapp-btn {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 10px;
+  background: #168c46;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-top: 14px;
+}
+
+.product-card .whatsapp-btn:hover {
+  background: #116b35;
+}
+
+/* Mobile responsive layout */
+@media (max-width: 600px) {
+  .products-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .product-card {
+    padding: 10px;
+    border-radius: 12px;
+  }
+
+  .product-card img {
+    height: 125px;
+  }
+
+  .product-card h3 {
+    font-size: 15px;
+  }
+
+  .product-card p {
+    font-size: 13px;
+  }
+
+  .product-card .whatsapp-btn {
+    font-size: 12px;
+    padding: 10px 5px;
+  }
+}
+
+/* SURAWEERA AGRO TECH Product Design */
+.products {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #dce9dd;
+  border-radius: 14px;
+  padding: 12px;
+  box-shadow: 0 4px 12px rgba(31, 92, 48, 0.10);
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.card img {
+  max-width: 100%;
+  height: 150px;
+  object-fit: contain;
+}
+
+.card h3 {
+  color: #205b32;
+}
+
+.card p {
+  color: #526052;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .products {
+    gap: 8px;
+  }
+
+  .card {
+    padding: 8px;
+  }
+
+  .card img {
+    height: 110px;
+  }
+
+  .card h3 {
+    font-size: 14px;
+  }
+}
+
   </style>
 </head>
 <body>
