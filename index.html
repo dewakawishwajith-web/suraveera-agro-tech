@@ -385,9 +385,11 @@ document.querySelectorAll('.whatsapp-btn').forEach(function(button) {
       ? heading.textContent.trim()
       : 'කෘෂි යන්ත්‍රයක්';
 
-    var message = 'ආයුබෝවන්! SURAWEERA AGRO TECH වෙතින් '
-      + productName
-      + ' පිළිබඳ මිල සහ වැඩි විස්තර ලබාගැනීමට කැමතියි.';
+    
+var message = 'ආයුබෝවන්! SURAWEERA AGRO TECH වෙතින් '
+  + productName
+  + ' සඳහා මිල, විස්තර සහ ලබාගත හැකි බව දැනගැනීමට කැමතියි.';
+
 
     var link = button.getAttribute('href');
     if (!link || !link.includes('wa.me/')) return;
